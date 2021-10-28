@@ -1,38 +1,21 @@
-/** Порядок подключения JS-модулей */
-
-var anchors = document.querySelectorAll('a[href*="#"]');
-var contacts = document.querySelector('.contacts');
-
-anchors.forEach(function (anchor) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    contacts.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
-});
-
-
-var toggleBtn = document.querySelector('.header__btn');
-var header = document.querySelector('.header');
-var body = document.querySelector('body');
+const toggleBtn = document.querySelector('.header__btn');
+const header = document.querySelector('.header');
+const body = document.querySelector('body');
 
 if(toggleBtn) {
 
-  var hideMenu = function () {
+  const hideMenu = function () {
     body.classList.remove('scroll-lock');
     header.classList.remove('opened');
   };
 
-  var toggleMenu = function () {
+  const toggleMenu = function () {
     body.classList.toggle('scroll-lock');
     header.classList.toggle('opened');
   };
 
 
-  var onEscKeyDown = function (evt) {
+  const onEscKeyDown = function (evt) {
     if (evt.key === 'Escape') {
       hideMenu();
       document.removeEventListener('keydown', function (e) {
@@ -41,14 +24,14 @@ if(toggleBtn) {
     }
   };
 
-  var onWindowChange = function () {
+  const onWindowChange = function () {
     hideMenu();
   };
 
   document.addEventListener('DOMContentLoaded', onWindowChange);
 
-  var width = window.innerWidth;
-  window.addEventListener('resize', function () {
+  let width = window.innerWidth;
+  window.addEventListener('resize', () => {
     if (window.innerWidth !== width) {
       hideMenu();
     }
@@ -64,18 +47,5 @@ if(toggleBtn) {
 }
 
 
-var invalidClassName = 'invalid';
-var inputs = document.querySelectorAll('input');
 
-inputs.forEach(function (input) {
-  input.addEventListener('invalid', function () {
-    input.classList.add(invalidClassName);
-  });
-
-  input.addEventListener('input', function () {
-    if (input.validity.valid) {
-      input.classList.remove(invalidClassName);
-    }
-  });
-});
 

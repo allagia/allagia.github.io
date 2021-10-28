@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Figma Land</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header container">
+
+    <a class="header__logo" aria-label="logo"><img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="logo Figma Land"></a>
+    <button class="header__btn" type="button" aria-label="открыть меню"></button>
+    <div class="header__navigation">
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-link" href="#">Home</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="#">Product</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="#">Pricing</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="#">About</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <form class="header__form" action="" method="POST">
+        <input class="header__input input" type="email" id="email-header" placeholder="Your Email" required="">
+        <label class="visually-hidden" for="email-header">Your Email</label>
+        <button class="header__form-btn btn" type="submit">Subsribe</button>
+      </form>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <section class="intro">
+      <div class="intro__wrap container">
+        <h2 class="visually-hidden">introduction</h2>
+        <picture class="intro__picture">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/intro@1x.webp 1x, img/intro@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/intro@1x.png 1x, img/intro@2x.png 2x">
+          <img class="intro__image" src="img/intro-mobile@1x.png" srcset="img/intro-mobile@2x.png 2x" alt="figma screenshots">
+        </picture>
+        <div class="intro__text">
+          <h1 class="intro__title">We focus on ergonomics </h1>
+          <p class="intro__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+        </div>
+        <button class="intro__btn btn btn--free btn--blue-reverse" type="button">Try For Free</button>
+      </div>
+    </section>
+
+    <section class="features container section">
+      <p class="features__entry section-entry">At your fingertips</p>
+      <h2 class="section-title">Features</h2>
+      <p class="section-subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+      <ul class="features__list">
+        <li class="features__item">
+          <h2 class="features__title">The best products start with Sketch</h2>
+          <p class="features__subtitle">Slate helps you see how many more days you need to work to reach your financial
+            goal. </p>
+        </li>
+        <li class="features__item">
+          <h2 class="features__title">Fastest way to organize</h2>
+          <p class="features__subtitle">Slate helps you see how many more days you need to work to reach your financial
+            goal. </p>
+        </li>
+        <li class="features__item">
+          <h2 class="features__title">Work better together</h2>
+          <p class="features__subtitle">Slate helps you see how many more days you need to work to reach your financial
+            goal. </p>
+        </li>
+      </ul>
+
+    </section>
+
+    <section class="prototyping container section">
+      <h2 class="section-title">Lightning fast prototyping</h2>
+      <p class="section-subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+      <button class="prototyping__btn btn btn--free" type="button">Try For Free</button>
+      <img class="prototyping__image" src="img/macbook@1x.png" srcset="img/macbook@2x.png" alt="macbook picture">
+    </section>
+
+    <section class="subscription">
+      <div class="subscription__wrap container section">
+        <p class="subscription__entry section-entry">At your fingertips</p>
+        <h2 class="section-title section-title--desktop">Lightning fast prototyping</h2>
+        <h2 class="section-title section-title--mobile">Newsletter </h2>
+        <h3 class="subscription__title">Subscribe to our Newsletter</h3>
+        <p class="subscription__subtitle">Available exclusivery on Figmaland</p>
+        <form class="subscription__form" action="" method="POST">
+          <input class="subscription__input input" type="email" id="email-header" placeholder="Your Email" required="">
+          <label class="visually-hidden" for="email-header">Your Email</label>
+          <button class="subscription__btn btn" type="submit">Subsribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="partners container section">
+      <h2 class="section-title">Partners</h2>
+      <p class="section-subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+      <ul class="partners__list">
+        <li class="partners__item">
+          <h3 class="partners__title">Client Name</h3>
+          <img class="partners__image" src="img/1.svg" alt="logo-1">
+          <p class="partners__text">Slate helps you see how many more days you need to work to reach your financial goal
+            for the month and year.</p>
+        </li>
+        <li class="partners__item">
+          <h3 class="partners__title">Client Name</h3>
+          <img class="partners__image" src="img/2.svg" alt="logo-2">
+          <p class="partners__text">Slate helps you see how many more days you need to work to reach your financial goal
+            for the month and year.</p>
+        </li>
+        <li class="partners__item">
+          <h3 class="partners__title">Client Name</h3>
+          <img class="partners__image" src="img/3.svg" alt="logo-3">
+          <p class="partners__text">Slate helps you see how many more days you need to work to reach your financial goal
+            for the month and year.</p>
+        </li>
+        <li class="partners__item">
+          <h3 class="partners__title">Client Name</h3>
+          <img class="partners__image" src="img/3.svg" alt="logo-3">
+          <p class="partners__text">Slate helps you see how many more days you need to work to reach your financial goal
+            for the month and year.</p>
+        </li>
+        <li class="partners__item">
+          <h3 class="partners__title">Client Name</h3>
+          <img class="partners__image" src="img/4.svg" alt="logo-4">
+          <p class="partners__text">Slate helps you see how many more days you need to work to reach your financial goal
+            for the month and year.</p>
+        </li>
+        <li class="partners__item">
+          <h3 class="partners__title">Client Name</h3>
+          <img class="partners__image" src="img/5.svg" alt="logo-5">
+          <p class="partners__text">Slate helps you see how many more days you need to work to reach your financial goal
+            for the month and year.</p>
+        </li>
+      </ul>
+      <button class="partners__btn btn btn--free btn--blue" type="button">Try For Free</button>
+    </section>
+
+    <section class="testimonials section container">
+      <h2 class="section-title">Testimonials</h2>
+      <img class="testimonials__image" src="img/dropbox@1x.png" srcset="img/dropbox@2x.png 2x" alt="">
+      <p class="section-subtitle">Most calendars are designed for teams. Slate is designed for freelancers who want a
+        simple way to plan their schedule.</p>
+      <div class="testimonials__card card">
+        <div class="card__photo" aria-label="employee photo"></div>
+        <div class="card__text">
+          <span class="card__intro">Organize across</span>
+          <span class="card__position">Ui designer</span>
+        </div>
+      </div>
+      <button class="testimonials__btn btn btn--free btn--blue" type="button">More Testimonials</button>
+    </section>
+
+    <section class="pricing container section">
+      <h2 class="section-title">Pricing</h2>
+      <p class="section-subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+      <ul class="pricing__list">
+        <li class="pricing__item">
+          <h3 class="pricing__name">Free</h3>
+          <p class="pricing__text">Organize across all apps by hand</p>
+          <div class="pricing__banner">
+            <span class="pricing__amount">0</span>
+            <span class="pricing__currency">$</span>
+            <span class="pricing__period">Per Month</span>
+          </div>
+          <a class="pricing__btn btn btn--free btn--blue" href="#contacts">Order Now</a>
+        </li>
+        <li class="pricing__item">
+          <h3 class="pricing__name pricing__name--uppercase">Stansard</h3>
+          <p class="pricing__text">Organize across all apps by hand</p>
+          <div class="pricing__banner">
+            <span class="pricing__amount">10</span>
+            <span class="pricing__currency">$</span>
+            <span class="pricing__period">Per Month</span>
+          </div>
+          <a class="pricing__btn btn btn--free btn--blue" href="#contacts">Order Now</a>
+        </li>
+        <li class="pricing__item">
+          <h3 class="pricing__name pricing__name--uppercase">Business</h3>
+          <p class="pricing__text">Organize across all apps by hand</p>
+          <div class="pricing__banner">
+            <span class="pricing__amount">99</span>
+            <span class="pricing__currency">$</span>
+            <span class="pricing__period">Per Month</span>
+          </div>
+          <a class="pricing__btn btn btn--free btn--blue" href="#contacts">Order Now</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contacts" class="contacts">
+      <div class="contacts__content section container">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+
+        <div class="contacts__wrap">
+          <form class="contacts-form" action="" method="POST">
+            <input class="contacts-form__input" type="text" id="name-id" placeholder="Your Name" required="">
+            <label class="visually-hidden" for="name-id">Your Name</label>
+            <input class="contacts-form__input" type="email" id="email-id" placeholder="Your Email" required="">
+            <label class="visually-hidden" for="email-id">Your Email</label>
+            <textarea class="contacts-form__textarea" id="textarea-id" placeholder="Your Message"></textarea>
+            <label class="visually-hidden" for="textarea-id">Your Message</label>
+            <button class="contacts-form__btn btn" type="submit">Send</button>
+          </form>
+          <div class="contacts-links">
+            <ul class="contacts-links__list">
+              <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--address" href="">6386 Spring St undefined Anchorage, Georgia 12473 United States</a></li>
+              <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--phone" href="tel:+78435550130">(843) 555-0130</a></li>
+              <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--email" href="mailto:willie.jennings@example.com">willie.jennings@example.com</a></li>
+            </ul>
+            <ul class="contacts-social">
+              <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--twitter" href="#" aria-label="twitter"></a></li>
+              <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--facebook" href="#" aria-label="facebook"></a></li>
+              <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--linkedin" href="#" aria-label="linked in"></a></li>
+            </ul>
+          </div>
+      </div>
+      </div></section>
+
+  </main>
+
+  <footer class="footer container">
+
+    <nav class="footer__nav">
+      <h2 class="footer__title">Pages</h2>
+      <ul class="footer__list">
+        <li class="footer__item"><a class="footer__link" href="">Eleanor Edwards</a></li>
+        <li class="footer__item"><a class="footer__link" href="">Ted Robertson</a></li>
+        <li class="footer__item"><a class="footer__link" href="">Annette Russell</a></li>
+        <li class="footer__item"><a class="footer__link" href="">Jennie Mckinney</a></li>
+        <li class="footer__item"><a class="footer__link" href="">Gloria Richards</a></li>
+      </ul>
+    </nav>
+    <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1915.7550087196478!2d-149.47325198385062!3d61.30408468239285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s6386%20Spring%20St%20undefined%20Anchorage%2C%20Georgia%2012473%20United%20States!5e0!3m2!1sru!2sru!4v1633686240737!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="contacts-links">
+  <ul class="contacts-links__list">
+    <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--address" href="">6386 Spring St undefined Anchorage, Georgia 12473 United States</a></li>
+    <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--phone" href="tel:+78435550130">(843) 555-0130</a></li>
+    <li class="contacts-links__item"><a class="contacts-links__value contacts-links__value--email" href="mailto:willie.jennings@example.com">willie.jennings@example.com</a></li>
+  </ul>
+  <ul class="contacts-social">
+    <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--twitter" href="#" aria-label="twitter"></a></li>
+    <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--facebook" href="#" aria-label="facebook"></a></li>
+    <li class="contacts-social__item"><a class="contacts-social__link contacts-social__link--linkedin" href="#" aria-label="linked in"></a></li>
+  </ul>
+</div>
+
+
+  </footer>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
